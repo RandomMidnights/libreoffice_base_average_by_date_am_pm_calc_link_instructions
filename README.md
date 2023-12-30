@@ -69,8 +69,6 @@ SELECT
  ORDER BY MIN("DateTime") DESC 
 ```
 
-![LibreOffice Base Database Query SQL Screen](./images/Instructions_html_1bf697a8.gif "LibreOffice Base Database Query SQL Screen")
-
  11. `[Ctrl-S]` A Save as window will appear; call the Query:
      "Query1". Click `OK`.
 	 
