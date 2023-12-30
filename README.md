@@ -55,7 +55,7 @@ CREATE TABLE "Table1" (
 ```sql
 SELECT
      -- Date has an underscore after it as Date is a keyword.
-     TO_CHAR("DateTime", 'YYYY-mm-dd') AS Date_,
+     TO_CHAR("DateTime", 'YYYY-MM-DD') AS Date_,
      TO_CHAR("DateTime", 'a') AS AMPM,
      MIN("DateTime") AS DateTimeAprox,
      -- This Averages the figures based on the Group By below.
@@ -64,7 +64,7 @@ SELECT
  FROM "Table1"
  WHERE "Ignore" != True
  -- This Groups it by date and AM and PM
- GROUP BY TO_CHAR("DateTime", 'YYYY-mm-dd-a' )
+ GROUP BY TO_CHAR("DateTime", 'YYYY-MM-DD-a' )
  -- This Orders it by date so that the latest entries appear at the top.
  ORDER BY MIN("DateTime") DESC 
 ```
@@ -91,7 +91,7 @@ it.
 
 ![LibreOffice Base Database Table1 Editing Screen](./images/Instructions_html_f20102d0.gif "LibreOffice Base Database Table1 Editing Screen")
 
-![LibreOffice Base Database Query1 View](./images/Instructions_html_cade18ed.gif "LibreOffice Base Database Query1 View")
+![LibreOffice Base Database Query1 View](./images/Instructions_html_cade18ed.png "LibreOffice Base Database Query1 View")
 
 ## Connecting the database to your spreadsheet
 
